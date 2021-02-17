@@ -26,7 +26,7 @@ Os desenvolvedores não fornecem suportes de instalação, caso tenha alguma dú
 
 ## Dependencies
 * Database fornecida no repositório.
-* [vrpex](https://github.com/contatosummerz/vrpex)
+* [vRPex](https://github.com/contatosummerz/vrpex) ou [vRP](https://github.com/ImagicTheCat/vRP/tree/1.0)
 
 ## Agradecimentos
 - [Lucas Silva](https://github.com/OLucasPk) - Developer
