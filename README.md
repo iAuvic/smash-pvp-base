@@ -6,31 +6,30 @@
   </a>
 </p>
 
-> Sim, este release está em Portugues.
+You can also read this README in [Portuguese](https://github.com/OLucasPk/smash-pvp-base/blob/master/README.pt.md).
 
-`smash-pvp-base` é um repositório com algumas resorces desenvolvidas para o [FiveM](https://fivem.net) especialmente para um servidor de PvP. 
+`smash-pvp-base` is a [FiveM](https://fivem.net) resource group developed for a pvp server. 
 
-## Motivo do release
-Estes scripts foram desenvolvidos em cima da `vrp` para um projeto de servidor de pvp. 
-Todavia, não irei mais abrir o servidor, então os scripts serão liberados para **estudo para pessoas interessadas**, ressalto que **esse release não é para quem quer copiar e colar em sua pasta resource** e sim para quem quer aprender com ele.
+## Release reason
+These scripts were developed for my pvp server. Due to several reasons I will not open it anymore, therefore, the scripts will be released for other developers to be **inspired / studied**, the way they prefer.
+
+These scripts do not work simply because when running Control C and Control V, you have to study the code and adapt your base.
 
 ## Suporte
-Os desenvolvedores não fornecem suportes de instalação, caso tenha alguma dúvida sobre o código em si contate-nos pelo Discord.
-> pk#5460
-
-> Gustavovk#0606
+The developers do not provide installation support, if you have any questions about the code itself contact us at Discord.
+> pk#5460 **or** Gustavovk#0606
 
 ## Scrips e suas funcionalidades
 
-> **smash-common:** Gerenciamento de Lobby, efeitos, teleports, comandos administrativos, controle geral de peds e densidade, blips em mapa, npcs, survival, zonas de pvp, free-for-all e gungame.
+> **smash-common:** Lobby management, effects, teleports, administrative commands, general control of peds and density, map blips, npcs, survival, pvp zones, free-for-all and gungame.
 
-> **smash-notifykill:** Notificações de kills e deaths. 
+> **smash-notifykill:** Notifications of kills and deaths.
 
-> **vrp_identidade:** Identidade com sistema de KD, Kills, Deaths integrados com banco de dados.
+> **vrp_identidade:** Identity with KD system, Kills, Deaths integrated with database.
 
 ## Dependencies
-* Database fornecida no repositório.
-* [vrpex](https://github.com/contatosummerz/vrpex)
+* Database provided in the repository.
+* [vRPex](https://github.com/contatosummerz/vrpex) or [vRP](https://github.com/ImagicTheCat/vRP/tree/1.0)
 
 ## Greetings
 - [Lucas Silva](https://github.com/OLucasPk) - Developer
@@ -41,6 +40,6 @@ Os desenvolvedores não fornecem suportes de instalação, caso tenha alguma dú
 
 ## Issues
 
-O sistema está em **ALPHA** bugs poderão ser encontrados.
+The system is in **ALPHA**, bugs can be found.
 
-O sistema de **GunGame** está instável e com alta chance de bugs.
+The **GunGame** system is unstable and has a high chance of bugs.
