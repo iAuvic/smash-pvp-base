@@ -15,11 +15,11 @@ These scripts were developed for my pvp server. Due to several reasons I will no
 
 These scripts do not work simply because when running Control C and Control V, you have to study the code and adapt your base.
 
-## Suporte
+## Support
 The developers do not provide installation support, if you have any questions about the code itself contact us at Discord.
 > pk#5460 **or** Gustavovk#0606
 
-## Scrips e suas funcionalidades
+## Scripts
 
 > **smash-common:** Lobby management, effects, teleports, administrative commands, general control of peds and density, map blips, npcs, survival, pvp zones, free-for-all and gungame.
 

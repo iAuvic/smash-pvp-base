@@ -28,14 +28,14 @@ Os desenvolvedores não fornecem suportes de instalação, caso tenha alguma dú
 * Database fornecida no repositório.
 * [vrpex](https://github.com/contatosummerz/vrpex)
 
-## Greetings
+## Agradecimentos
 - [Lucas Silva](https://github.com/OLucasPk) - Developer
 - [Gustavo Luiz](https://github.com/gustavovk) - Developer
 - [Thiago](https://github.com/gordaum) - Testing
 - [Igor Oliveira](https://github.com/igorl1) - Code Review
 
 
-## Issues
+## Problemas (Issues)
 
 O sistema está em **ALPHA** bugs poderão ser encontrados.
 
