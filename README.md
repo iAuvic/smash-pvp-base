@@ -27,6 +27,9 @@ The developers do not provide installation support, if you have any questions ab
 
 > **vrp_identidade:** Identity with KD system, Kills, Deaths integrated with database.
 
+## Changelog
+> **18/02/21:** Fixed the problem with the database, updated the file in the repository.
+
 ## Dependencies
 * Database provided in the repository.
 * [vRPex](https://github.com/contatosummerz/vrpex) or [vRP](https://github.com/ImagicTheCat/vRP/tree/1.0)

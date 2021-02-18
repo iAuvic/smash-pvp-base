@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Fev-2021 às 06:35
+-- Tempo de geração: 18-Fev-2021 às 17:41
 -- Versão do servidor: 10.4.16-MariaDB
 -- versão do PHP: 7.4.12
 
@@ -20,6 +20,24 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `pvp`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `vrp_attachs`
+--
+
+CREATE TABLE `vrp_attachs` (
+  `user_id` int(11) NOT NULL,
+  `grip` int(11) NOT NULL DEFAULT 0,
+  `lanterna` int(11) NOT NULL DEFAULT 0,
+  `compensador` int(11) NOT NULL DEFAULT 0,
+  `silenciador` int(11) NOT NULL DEFAULT 0,
+  `pente` int(11) NOT NULL DEFAULT 0,
+  `miraS` int(11) NOT NULL DEFAULT 0,
+  `miraA` int(11) NOT NULL DEFAULT 0,
+  `tracante` int(11) NOT NULL DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
