@@ -124,52 +124,17 @@ end)
 -- RANK
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterCommand('rank',function(source,args,rawCmd)
-    local user_id = vRP.getUserId(source)
     local rows = vRP.query("vRP/getRank",{})
 
-    local id01 = rows[1]["user_id"]
-    local id02 = rows[2]["user_id"]
-    local id03 = rows[3]["user_id"]
-    local id04 = rows[4]["user_id"]
-    local id05 = rows[5]["user_id"]
-
-    local ident01 = vRP.getUserIdentity(id01)
-    local ident02 = vRP.getUserIdentity(id02)
-    local ident03 = vRP.getUserIdentity(id03)
-    local ident04 = vRP.getUserIdentity(id04)
-    local ident05 = vRP.getUserIdentity(id05)
-
-    local kd01 = round(rows[1]["kd"],2)
-    local kd02 = round(rows[2]["kd"],2)
-    local kd03 = round(rows[3]["kd"],2)
-    local kd04 = round(rows[4]["kd"],2)
-    local kd05 = round(rows[5]["kd"],2)
-
-    local coins01 = rows[1]["coins"]
-    local coins02 = rows[2]["coins"]
-    local coins03 = rows[3]["coins"]
-    local coins04 = rows[4]["coins"]
-    local coins05 = rows[5]["coins"]
-
-    local kills01 = rows[1]["kills"]
-    local kills02 = rows[2]["kills"]
-    local kills03 = rows[3]["kills"]
-    local kills04 = rows[4]["kills"]
-    local kills05 = rows[5]["kills"]
-
-    local deaths01 = rows[1]["deaths"]
-    local deaths02 = rows[2]["deaths"]
-    local deaths03 = rows[3]["deaths"]
-    local deaths04 = rows[4]["deaths"]
-    local deaths05 = rows[5]["deaths"]
-
-
-
-    TriggerClientEvent("ONotify",source,"~g~<b>1°</b>: ~w~"..ident01["name"].." "..ident01["firstname"].." ~w~| ~g~Kills: ~w~"..kills01.." ~w~| ~g~Deaths: ~w~"..deaths01.." | ~g~Kd:~w~ "..kd01)
-    TriggerClientEvent("ONotify",source,"~g~<b>2°</b>: ~w~"..ident02["name"].." "..ident02["firstname"].." ~w~| ~g~Kills: ~w~"..kills02.." ~w~| ~g~Deaths: ~w~"..deaths02.." | ~g~Kd:~w~ "..kd02)
-    TriggerClientEvent("ONotify",source,"~g~<b>3°</b>: ~w~"..ident03["name"].." "..ident03["firstname"].." ~w~| ~g~Kills: ~w~"..kills03.." ~w~| ~g~Deaths: ~w~"..deaths03.." | ~g~Kd:~w~ "..kd03)
-    TriggerClientEvent("ONotify",source,"~g~<b>4°</b>: ~w~"..ident04["name"].." "..ident04["firstname"].." ~w~| ~g~Kills: ~w~"..kills04.." ~w~| ~g~Deaths: ~w~"..deaths04.." | ~g~Kd:~w~ "..kd04)
-    TriggerClientEvent("ONotify",source,"~g~<b>5°</b>: ~w~"..ident05["name"].." "..ident05["firstname"].." ~w~| ~g~Kills: ~w~"..kills05.." ~w~| ~g~Deaths: ~w~"..deaths05.." | ~g~Kd:~w~ "..kd05)
+    for i=1,5 do
+        local user_id = rows[i]["user_id"]
+        local identity = vRP.getUserIdentity(user_id)
+        local user_kd = round(rows[i]["kd"],2)
+        local user_coins = rows[i]["coins"]
+        local user_kills = rows[i]["kills"]
+        local user_deaths = rows[i]["deaths"]
+        TriggerClientEvent("ONotify",source,"~g~<b>1°</b>: ~w~"..identity["name"].." "..identity["firstname"].." ~w~| ~g~Kills: ~w~"..user_kills.." ~w~| ~g~Deaths: ~w~"..user_deaths.." | ~g~Kd:~w~ "..user_kd)
+    end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- USE
