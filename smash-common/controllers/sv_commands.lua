@@ -133,7 +133,7 @@ RegisterCommand('rank',function(source,args,rawCmd)
         local user_coins = rows[i]["coins"]
         local user_kills = rows[i]["kills"]
         local user_deaths = rows[i]["deaths"]
-        TriggerClientEvent("ONotify",source,"~g~<b>1°</b>: ~w~"..identity["name"].." "..identity["firstname"].." ~w~| ~g~Kills: ~w~"..user_kills.." ~w~| ~g~Deaths: ~w~"..user_deaths.." | ~g~Kd:~w~ "..user_kd)
+        TriggerClientEvent("ONotify",source,"~g~<b>"..i.."°</b>: ~w~"..identity["name"].." "..identity["firstname"].." ~w~| ~g~Kills: ~w~"..user_kills.." ~w~| ~g~Deaths: ~w~"..user_deaths.." | ~g~Kd:~w~ "..user_kd)
     end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
